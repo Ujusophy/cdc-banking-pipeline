@@ -42,19 +42,6 @@ CDC means Change Data Capture. Instead of copying a whole database every night, 
 | Databricks | Reads Kafka events, writes to Delta Lake |
 
 
-## Project Files
-
-```
-cdc-banking-pipeline/
-  docker-compose.yml      runs Debezium
-  data_generator.py       fakes banking activity
-  create_tables.sql     creates the source tables
-  cdc_pipeline.py       Databricks notebook, exported
-  debezium-connector.json 
-  README.md
-```
-
-
 ## How to Run It
 
 You need: PostgreSQL installed locally, Docker Desktop, Python, a free Confluent Cloud account, a free Databricks account.
